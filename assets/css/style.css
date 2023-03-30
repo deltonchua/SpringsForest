@@ -1,0 +1,468 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Utilities */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: url('../images/forest.jpg') no-repeat center bottom/cover;
+  position: relative;
+}
+
+.outdoor {
+  background: url('../images/camp.jpg') no-repeat center bottom/cover;
+}
+
+.accommodation {
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url('../images/huts.jpg') no-repeat center center/cover;
+  /* background: url("../images/huts.jpg") no-repeat center bottom/cover; */
+}
+
+.agriculture {
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../images/mushrooms.jpg') no-repeat center center/cover;
+}
+
+.water {
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('../images/water.jpg') no-repeat center center/cover;
+}
+
+/* .timber {
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../images/timber.jpg") no-repeat center center/cover;
+} */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+.container {
+  width: 85vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn {
+  color: #212529;
+  background-color: #ffb000;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1.2rem 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Sections */
+/* Header */
+#main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.2rem 0;
+}
+
+#main-header .logo {
+  display: flex;
+  align-items: center;
+}
+
+#main-header .logo img {
+  width: 5rem;
+  margin-right: 1rem;
+}
+
+#main-header .logo h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+#main-header #main-navbar {
+  display: flex;
+  align-items: center;
+}
+
+#main-header #main-navbar > * {
+  margin-left: 2rem;
+}
+
+#main-header #main-navbar .country {
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #fff;
+}
+
+i.fa-camera {
+  font-size: 1.5rem;
+}
+
+i.fa-camera {
+  cursor: pointer;
+}
+
+.menu-btn {
+  font-size: 1.5rem;
+  display: none;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 4rem;
+  padding-top: 4rem;
+}
+
+.side-navbar ul {
+  list-style: none;
+}
+
+.side-navbar ul li {
+  margin-bottom: 3.5rem;
+}
+
+/* .side-navbar ul li:last-child {
+  margin-bottom: 0;
+} */
+
+.side-navbar ul li h3 {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.side-navbar ul li p {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 0.3rem;
+}
+
+/* Main Content */
+.main-content {
+  padding: 6.8rem 0 9.75rem;
+  width: 85%;
+  max-width: 50rem;
+}
+
+.main-content h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+
+/* Image Gallery */
+.img-gallery {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.img-container {
+  overflow: hidden;
+  height: 30rem;
+}
+
+.img-container > div {
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.img-container > div:hover {
+  transform: scale(1.1);
+}
+
+.hiker {
+  background: url('../images/hiker.jpg') no-repeat center center/cover;
+}
+
+.stairs {
+  background: url('../images/stairs.jpg') no-repeat center center/cover;
+}
+
+.waterfalls {
+  background: url('../images/waterfalls.jpg') no-repeat center center/cover;
+}
+
+.huts {
+  background: url('../images/huts2.jpg') no-repeat center center/cover;
+}
+
+.treehouse {
+  background: url('../images/treehouse.jpg') no-repeat center center/cover;
+}
+
+.villa {
+  background: url('../images/villa.jpg') no-repeat center center/cover;
+}
+
+.hut {
+  background: url('../images/hut.jpg') no-repeat center center/cover;
+}
+
+.hut2 {
+  background: url('../images/hut2.jpg') no-repeat center center/cover;
+}
+
+.treehouse2 {
+  background: url('../images/treehouse2.jpg') no-repeat center center/cover;
+}
+
+.ginseng {
+  background: url('../images/ginseng.jpg') no-repeat center center/cover;
+}
+
+.ginseng-flower {
+  background: url('../images/ginseng-flower.jpg') no-repeat center center/cover;
+}
+
+.mushrooms1 {
+  background: url('../images/mushrooms1.jpg') no-repeat center center/cover;
+}
+
+.mushrooms2 {
+  background: url('../images/mushrooms2.jpg') no-repeat center center/cover;
+}
+
+.leech {
+  background: url('../images/leech.jpg') no-repeat center center/cover;
+}
+
+.frog {
+  background: url('../images/frog.jpg') no-repeat center center/cover;
+}
+
+.waterfalls1 {
+  background: url('../images/waterfalls1.jpg') no-repeat center center/cover;
+}
+
+.waterfalls2 {
+  background: url('../images/waterfalls2.jpg') no-repeat center center/cover;
+}
+
+.waterfalls3 {
+  background: url('../images/waterfalls3.jpg') no-repeat center center/cover;
+}
+
+.waterfalls4 {
+  background: url('../images/waterfalls4.jpg') no-repeat center center/cover;
+}
+
+.waterfalls5 {
+  background: url('../images/waterfalls5.jpg') no-repeat center center/cover;
+}
+
+.waterfalls6 {
+  background: url('../images/waterfalls6.jpg') no-repeat center center/cover;
+}
+
+.waterfalls7 {
+  background: url('../images/waterfalls7.jpg') no-repeat center center/cover;
+}
+
+.waterfalls8 {
+  background: url('../images/waterfalls8.jpg') no-repeat center center/cover;
+}
+
+/* Footer */
+footer {
+  padding: 3.8rem 0;
+  display: flex;
+  align-items: center;
+}
+
+footer .social {
+  display: flex;
+  align-items: center;
+}
+
+footer .social p {
+  font-size: 0.9rem;
+  margin-right: 4rem;
+}
+
+footer .social i {
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+}
+
+footer .footer-cards {
+  padding: 3rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  gap: 2rem;
+  align-items: center;
+  background-color: #212529;
+}
+
+footer .footer-cards i {
+  text-align: center;
+}
+
+footer .footer-cards .card h3 {
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 1rem;
+}
+
+footer .footer-cards .card .card-content {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-cards .card .card-content p {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-right: 1rem;
+}
+
+@media (max-width: 1310px) {
+  footer .footer-cards {
+    display: none;
+  }
+}
+
+@media (max-width: 1072px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-top: 0;
+  }
+
+  .side-navbar {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .img-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  #main-header,
+  footer {
+    padding: 3rem 0;
+  }
+
+  #main-header .logo i,
+  #main-header .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  #main-header #main-navbar > * {
+    margin-left: 1rem;
+  }
+
+  #main-header #main-navbar > *:first-child {
+    margin-left: 3rem;
+  }
+
+  #main-header #main-navbar .country {
+    font-size: 0.95rem;
+    padding: 0 0.8rem 0 0;
+    border: none;
+    border-right: 1px solid #fff;
+  }
+
+  i.fa-camera {
+    font-size: 1.1rem;
+  }
+
+  .menu-btn {
+    font-size: 1.2rem;
+  }
+
+  .main-content {
+    padding: 4.8rem 0 8.5rem;
+    padding: 0 0 3rem;
+  }
+
+  .main-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 1rem 2rem;
+  }
+
+  .img-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .img-container {
+    height: 20rem;
+  }
+
+  footer .social {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .social p {
+    margin-right: 0;
+  }
+
+  footer .social i {
+    font-size: 1rem;
+    margin-left: 0.9rem;
+  }
+}
+
+/* Show Nav */
+.show-nav {
+  display: block;
+  text-align: right;
+}
+
+/* background overlay */
+body.overlay::before,
+body.overlay2::before {
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Show Images */
+.show-img {
+  display: grid;
+}
